@@ -1,0 +1,1 @@
+ALTER TABLE `services` ADD `description` VARCHAR(500) NOT NULL AFTER `service_name`;

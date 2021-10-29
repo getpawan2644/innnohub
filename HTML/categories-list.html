@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>InnoHubb</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/icofont.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="home_header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="image/logo.png" alt="logo">
+        </a>
+        <!-- logo end -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                All Categories <i class="icofont-rounded-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="categories-list.html"> <i class="icofont-ui-v-card"></i> Spotlight Categories</a></li>
+                <li><a class="dropdown-item" href="categories-list.html"> <i class="icofont-building-alt"></i>Industry</a></li>
+                <li><a class="dropdown-item" href="categories-list.html"><i class="icofont-building"></i> Department</a></li>
+                <li><a class="dropdown-item" href="categories-list.html"><i class="icofont-users-alt-5"></i> Suitable for number of employees</a></li>
+                <li><a class="dropdown-item" href="categories-list.html"><i class="icofont-readernaut"></i> Deployment options</a></li>
+                <li><a class="dropdown-item" href="categories-list.html"><i class="icofont-user-suited"></i> Open to Partnerships</a></li>
+                <li><a class="dropdown-item" href="categories-list.html"><i class="icofont-bank-alt"></i> Headquartered in</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about us.html">About us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact us</a>
+            </li>
+          </ul>
+
+          <div class="nav-right">
+            <!-- search -->
+            <form class="top_search" >
+              <div class="form-group">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search" required>
+              </div>
+              <button onclick="openSearch()" class="search-btn" type="button"><i class="icofont-search-1"></i></button>
+            </form>
+            <!-- search -->
+
+            <!-- login register -->
+            <div class="dropdown">
+              <button class="inno-orange-btn" type="button" data-bs-toggle="modal" data-bs-target="#login_model">
+                Login/Register
+              </button>
+            </div>
+            <!-- login register end -->
+          </div>
+          
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- header end -->
+
+  <!-- banner -->
+  <section class="p-0 bg-gray">
+    <div class="banner inner-banner">
+      <div class="banner-wrap">
+        <div class="container sml-container">
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- banner text -->
+              <div class="banner-text">
+                <h2>All Categories</h2>
+              </div>
+              <!-- banner text end -->
+			</div>
+          </div>
+        </div>
+      </div>
+      <img class="banner-bg" src="image/inner-bg.png" alt="banner">
+    </div>
+  </section>
+  <!-- banner end -->
+  
+  <!-- categories -->
+  <section class="tab-list bg-gray">
+    <div class="all-categories">
+      <div class="container sml-container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- all categories -->
+             <div class="category-wrap">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="spotlight-tab" data-bs-toggle="tab" href="#spotlight" role="tab" aria-controls="spotlight" aria-selected="true"><i class="icofont-ui-v-card"></i> <span>Spotlight</span></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="industry-tab" data-bs-toggle="tab" href="#industry" role="tab" aria-controls="industry" aria-selected="false"><i class="icofont-building-alt"></i> <span>Industry</span></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="department-tab" data-bs-toggle="tab" href="#department" role="tab" aria-controls="department" aria-selected="false"><i class="icofont-building"></i><span>Department</span></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="employs-tab" data-bs-toggle="tab" href="#employs" role="tab" aria-controls="employs" aria-selected="false"><i class="icofont-users-alt-5"></i><span>Suitable for employees</span></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="deployment_options-tab" data-bs-toggle="tab" href="#deployment_options" role="tab" aria-controls="deployment_options" aria-selected="false"><i class="icofont-readernaut"></i> <span> Deployment options</span></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="partnerships-tab" data-bs-toggle="tab" href="#partnerships" role="tab" aria-controls="partnerships" aria-selected="false"><i class="icofont-user-suited"></i> <span>Open to Partnerships</span></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="Headquar-tab" data-bs-toggle="tab" href="#Headquar" role="tab" aria-controls="Headquar" aria-selected="false"><i class="icofont-bank-alt"></i><span>Headquartered in</span></a>
+                </li>
+              </ul>
+              
+            </div>
+            <!-- all categories end -->
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- categories end -->
+
+  <section>
+    <div class="container sml-container">
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="spotlight" role="tabpanel" aria-labelledby="spotlight-tab">
+          <div class="tab-wrap">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 inner-cat">
+                <!-- inno card -->
+                <a href="categories-details.html" class="inno-card">
+                  <i class="icofont-computer"></i>
+                  <h4>AI / Machine Learning</h4>
+                  <p>Our theme architecture is designed for maximize security.</p>
+                </a>
+                <!-- inno card end -->
+              </div>
+
+              <div class="col-lg-3 col-md-6 inner-cat">
+                <!-- inno card -->
+                <a href="categories-details.html" class="inno-card">
+                  <i class="icofont-link-alt"></i>
+                  <h4>Blockchain</h4>
+                  <p>Our theme architecture is designed for maximize security.</p>
+                </a>
+                <!-- inno card end -->
+              </div>
+
+              <div class="col-lg-3 col-md-6 inner-cat">
+                <!-- inno card -->
+                <a href="categories-details.html" class="inno-card">
+                  <i class="icofont-interface"></i>
+                  <h4>IoT</h4>
+                  <p>Our theme architecture is designed for maximize security.</p>
+                </a>
+                <!-- inno card end -->
+              </div>
+
+              <div class="col-lg-3 col-md-6 inner-cat">
+                <!-- inno card -->
+                <a href="categories-details.html" class="inno-card">
+                  <i class="icofont-automation"></i>
+                  <h4>Business Automation</h4>
+                  <p>Our theme architecture is designed for maximize security.</p>
+                </a>
+                <!-- inno card end -->
+              </div>
+
+              <div class="col-lg-3 col-md-6 inner-cat">
+                <!-- inno card -->
+                <a href="categories-details.html" class="inno-card">
+                  <i class="icofont-database"></i>
+                  <h4>Big Data</h4>
+                  <p>Our theme architecture is designed for maximize security.</p>
+                </a>
+                <!-- inno card end -->
+              </div>
+
+              <div class="col-lg-3 col-md-6 inner-cat">
+                <!-- inno card -->
+                <a href="categories-details.html" class="inno-card">
+                  <i class="icofont-lock"></i>
+                  <h4>CyberSecurity</h4>
+                  <p>Our theme architecture is designed for maximize security.</p>
+                </a>
+                <!-- inno card end -->
+              </div>
+
+              <div class="col-lg-3 col-md-6 inner-cat">
+                <!-- inno card -->
+                <a href="categories-details.html" class="inno-card">
+                  <i class="icofont-briefcase"></i>
+                  <h4>Business Intelligence</h4>
+                  <p>Our theme architecture is designed for maximize security.</p>
+                </a>
+                <!-- inno card end -->
+              </div>
+
+              <div class="col-lg-3 col-md-6 inner-cat">
+                <!-- inno card -->
+                <a href="categories-details.html" class="inno-card">
+                  <i class="icofont-ui-user-group"></i>
+                  <h4>CRM</h4>
+                  <p>Our theme architecture is designed for maximize security.</p>
+                </a>
+                <!-- inno card end -->
+              </div>
+
+              <div class="col-lg-3 col-md-6 inner-cat">
+                <!-- inno card -->
+                <a href="categories-details.html" class="inno-card">
+                  <i class="icofont-dashboard-web"></i>
+                  <h4>ERP</h4>
+                  <p>Our theme architecture is designed for maximize security.</p>
+                </a>
+                <!-- inno card end -->
+              </div>
+
+              <div class="col-lg-3 col-md-6 inner-cat">
+                <!-- inno card -->
+                <a href="categories-details.html" class="inno-card">
+                  <i class="icofont-connection"></i>
+                  <h4>Collaboration Software</h4>
+                  <p>Our theme architecture is designed for maximize security.</p>
+                </a>
+                <!-- inno card end -->
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="industry" role="tabpanel" aria-labelledby="industry-tab">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-architecture-alt"></i>
+                <h4>Information Technology</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-bank"></i>
+                <h4>Banking and Financial Services</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-safety"></i>
+                <h4>Insurance</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-home"></i>
+                <h4>Real-Estate</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-hospital"></i>
+                <h4>Hospitality</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-bus-alt-1"></i>
+                <h4>Transport and Logistics</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-water-drop"></i>
+                <h4>Oil & Gas</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-court-hammer"></i>
+                <h4>Legal</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-building-alt"></i>
+                <h4>Industrial Manufacturing</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-bank-alt"></i>
+                <h4>Government</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-cart-alt"></i>
+                <h4>Wholesale and Retail</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-hat"></i>
+                <h4>Education</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-heart-beat"></i>
+                <h4>Healthcare and Pharmaceuticals</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-search-user"></i>
+                <h4>Staffing & Recruiting</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="department" role="tabpanel" aria-labelledby="department-tab">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-ui-user-group"></i>
+                <h4>HR</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-calculator-alt-2"></i>
+                <h4>Finance and Accounting</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-cart-alt"></i>
+                <h4>Procurement</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-ui-settings"></i>
+                <h4>Operations</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-court-hammer"></i>
+                <h4>Legal</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-ui-note"></i>
+                <h4>Compliance</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-sale-discount"></i>
+                <h4>Sales</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-computer"></i>
+                <h4>IT</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-lock"></i>
+                <h4>Corporate Security</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-mega-phone"></i>
+                <h4>Marketing</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="employs" role="tabpanel" aria-labelledby="employs-tab">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-safety-hat"></i>
+                <h4>1-50</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-safety-hat"></i>
+                <h4>50-200</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-safety-hat"></i>
+                <h4>200-500</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-safety-hat"></i>
+                <h4>500-1000</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-safety-hat"></i>
+                <h4>1000-5000</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-safety-hat"></i>
+                <h4>5000+</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="deployment_options" role="tabpanel" aria-labelledby="deployment_options-tab">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-safety-hat"></i>
+                <h4>SaaS</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-safety-hat"></i>
+                <h4>PaaS</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6 inner-cat">
+              <!-- inno card -->
+              <a href="categories-details.html" class="inno-card">
+                <i class="icofont-safety-hat"></i>
+                <h4>IaaS</h4>
+                <p>Our theme architecture is designed for maximize security.</p>
+              </a>
+              <!-- inno card end -->
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="partnerships" role="tabpanel" aria-labelledby="partnerships-tab">
+          <div class="row">
+
+
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="Headquar" role="tabpanel" aria-labelledby="Headquar-tab">...</div>
+      </div>
+    </div>
+    
+  </section>
+
+
+  <!-- footer -->
+  <footer>
+    <div class="container sml-container">
+      <div class="row">
+        <div class="col-lg-4">
+          <!-- left content -->
+          <div class="ftr-left-cont">
+            <a class="footer-logo" href="#"><img src="image/footer-logo.png" alt="logo"></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et sis.</p>
+            <ul class="social-footer">
+              <li><a href="https://www.facebook.com" target="_blank"><i class="icofont-facebook"></i></a></li>
+              <li><a href="https://www.youtube.com" target="_blank"><i class="icofont-youtube"></i></a></li>
+              <li><a href="https://www.instagram.com" target="_blank"><i class="icofont-instagram"></i></a></li>
+              <li><a href="https://www.twitter.com" target="_blank"><i class="icofont-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com" target="_blank"><i class="icofont-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <!-- left content end -->
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="ftr-mdl-cont">
+            <h5>Quick Link</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about us.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="ftr-right-cont">
+            <h5>Contact Info</h5>
+            <ul>
+              <li><a href="#"><i class="icofont-location-pin"></i> 525 Milltown Rd Suite 304, North <br> Brunswick, NJ 08902</a></li>
+              <li><a href="mailto:info@Innohub.com"><i class="icofont-mail"></i> info@Innohub.com</a></li>
+              <li><a href="tel:+1 987 654 3210"><i class="icofont-ui-call"></i> +1 987 654 3210  (Fax: +1 555 666 9874)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- copyright -->
+    <div class="copyright">
+      <div class="container sml-container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="copy-cont">
+              <p>© 2021 InnoHubb. All Rights Reserved</p>
+              <p>Powered By <a href="https://www.braintechnosys.com/" target="_blank">Brain Technosys</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- copyright end -->
+  </footer>
+  <!-- footer end -->
+
+<!-- login Modal -->
+<div class="modal fade" id="login_model" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-body p-0">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			
+		  <div class="row g-0">
+			  <div class="col-lg-6 pr-lg-0">
+				  <div class="login-form">
+					  <form>
+						<div class="form-input">
+						  <h3>Login Details</h3>
+							<div class="form-group mb-2">
+							  <label for="exampleInputEmail1">Email address</label>
+							  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							</div>
+							<div class="form-group">
+							  <label for="exampleInputPassword1">Password</label>
+							  <input type="password" class="form-control" id="exampleInputPassword1">
+							</div>
+							<div class="form-group form-check">
+							  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+							  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+							  <a href="#" class="forget">Forget Password ?</a>
+							</div>
+							<button id="submit" class="inno-orange-btn" name="submit">Submit</button>
+						</div>
+						<div class="input-button">
+						  <a href="register as.html" class="btn yellow_btn">Don't Have An Account <span>SignUp</span></a>
+						</div>
+					  </form>
+				  </div>
+			  </div>
+			  <div class="col-lg-6 pl-0">
+				  <div class="right-img">
+					  <img src="image/login-popup.jpg" class="img-fluid"/>
+				  </div>
+			  </div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+</div>
+<!-- login Modal end -->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    var search_open = false; 
+    function openSearch(){
+      document.querySelector(".top_search").classList.toggle("openSearch");
+      search_open = !search_open;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="onlineprojectprogress.com" id="d4b2fc98-44bf-4c7a-80a4-bc0084fcad63" port="22" nameFormat="DESCRIPTIVE" username="nlinepu4" />
+    </configs>
+  </component>
+</project>

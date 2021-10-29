@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+@media (max-width:1550px){
+	.drp_ser .init{font-size:12px;}
+	.search_cat{width: 175px;}
+	.search_input{width: calc(100% - 175px);}
+	.head_search{width: 500px;left: 38%;transform: translate(-38%, -50%);}
+	/* .head_search{position: static;margin-left: 20px;margin-top: 8px;} */
+}
+
+@media (max-width:1350px){
+.header {padding: 15px 10px;}
+.logo {width: 200px; margin-top:10px;}
+.menu1 li {padding-left: 15px;}	
+.menu2 li {padding-left: 20px;}
+.head_search{width:445px; left: 42%;transform: translate(-42%, -50%);}
+.search_input input {font-size: 12px;}
+.search_cat {width: 130px;}
+.search_input {width: calc(100% - 130px);}
+.search_cat ul li.init {padding: 16px 0px 13px 8px; background-position:right 3px center; font-size:12px;}
+}
+
+@media (max-width:1200px){
+	.head_search {width: 550px;right: 20px;top: 20px;float: right;left: auto;transform: none;}
+	.header_right{clear: both;}
+	.menu1{float:right;    margin-top: 5px;}
+	.menu2{display:none;}
+	.banner p {font-size: 30px;}
+	.search_cat {width: 180px;}
+	.search_input {width: calc(100% - 180px);}
+	.btn{margin-bottom:5px;}
+}
+
+@media (max-width:1024px){
+	
+}
+
+@media (max-width:991px){
+	.filter .navbar-nav a.nav-link{padding: 2px 8px;}
+	.head_search {width: 400px;}
+	.search_cat {width: 150px;}
+	.search_input {width: calc(100% - 150px);}
+	.five_plan ul li span {float: none;}
+	.five_plan .contain_txt {float: none;margin-top: 10px;margin-left: 0px;}
+	.step_num{display: none;}
+	.step_barcon ul li{min-width:auto;}
+	.form-group {margin-bottom: 10px;}
+}
+
+@media (max-width:767px){
+	.head_search {width: 100%;position: sticky;}
+	.banner p {font-size: 16px;}
+	.header {padding: 5px 10px;}
+	.filter-mobile{display:block;}
+	.filter-menu{display:none;cursor:pointer;cursor: pointer;position: absolute;top: 36px;width: 100%;background-color: #fff;z-index: 9;}
+	.filter .navbar .collapse .dropdown{right: 0;position: absolute;}
+	.filter .navbar .collapse{position: relative;}
+	.drp_ser{background: none;padding: 0 0 0 10px;}
+	.menu1 li.reg a, .menu1 li.drp{font-size:12px;}
+	.menu1 li.drp{background: url(../img/sml_arrow.png) no-repeat right top 6px;}
+	.logo {width: 150px;margin-top: 15px;}
+	.banner_vontent {padding: 20px 0;}
+	.footer{padding:10px;}
+	.copy{text-align:center;border: none;    padding: 10px 0;}
+	.copy span{text-align: center !important;    float: none !important;display: block;}
+	footer{padding:10px;}
+	.footer_nav a{line-height: 24px;font-size: 11px;}
+	footer .logo{max-width: 130px;margin-bottom: 10px;}
+	.social{margin-bottom: 10px;}
+	.page-heading{font-size:13px;}
+	.heading_tab li a{    height: 30px;
+    line-height: 30px;    font-size: 11px;}
+	.heading_tab{    margin: -33px 0 0;}
+	.heading_tab li {padding: 0 0 0 5px;}
+	.inner-filter{margin-top: 10px;background-color: #757577;display: block;width: 100%;padding: 5px;color: #fff;font-size: 16px;cursor: pointer;}
+	.filters{display:none;width: 100%;padding-bottom: 0px;}
+	.contain_section{padding: 0 0 10px 0px;    display: block;}
+	.ad-part {margin: 15px 0px 15px;}
+	.page-heading{margin: 10px 0 0;}
+	.form-heading h4{font-size:14px;}
+	label{font-size:11px;margin-bottom: .1rem;}
+	.mid_steps .form-group {margin-bottom: 10px;}
+	select.form-control:not([size]):not([multiple]) {height: auto;}
+	.form-control, select.form-control:not([size]):not([multiple]) {min-height: 30px;font-size: 12px;padding: 0 0.75rem;}
+	.custom_select::after{top:11px;}
+	.left-menu li a {padding: 6px 20px;font-weight: 600;font-size: 13px;}
+	.ad_list .ad_image{width:100%; height:150px;}
+	.ad_list .ad_description{width:100%;}
+	.post_detail p{width:100%;}
+	.ad_list h4{font-size:14px;}
+	.ad_slider{width:100%;}
+	.post_btns{width: 100%;padding-left: 0px;margin-top: 15px;}
+	.ad_req_btn a{line-height: 30px;height: 30px;font-weight: 600;font-size: 14px;}
+	.heading h2 {font-size: 16px;}
+	.form {text-align: left;margin-bottom: 0px !important;}
+	.form-group {margin-bottom: 10px;}
+	.heading p {font-weight: 600;margin-bottom: 5px;}
+	.center_popstyle .star {width: 43% !important;}
+	.rating-review h6{font-size:14px;}
+	.bottom-p{margin-bottom:0;}
+	.btn{margin-bottom:5px;}
+	.center_popstyle{    margin-top: 0px;}
+	.table-style .table .thead-dark th{line-height: 20px;font-size: 12px;}
+	.table-heading{font-size: 16px;}
+	.job-picture li {width: 33.333%;margin-right: 0px;height: auto;}
+	.step_barcon ul li{width: calc(33.333% - 3px);margin-right: 3px;text-align: center;}
+	.step_info span{display:none;}
+	.step_info{float:none;}
+	.step_info label{font-size: 13px;margin-top: 4px;}
+	.social-form i{width: 40px;height: 28px;font-size: 14px;line-height: 30px;}
+	.select-photo ul li.mr-5, .select-photo ul li.mr-3{margin-right:3px !important;}
+	.select-photo ul li{width: calc(33.333% - 3px);margin-right: 3px;text-align: center;}
+	.select-photo ul li .coustom-input, .select-photo ul li .green-photo .coustom-input{height: 90px;width: 100%;}
+	.prfile-pic label{display:block;}
+	.mt-35 {margin-top: 5px;}
+	.custom-control-label{padding-top: 5px;}
+	.mt-28 {margin-top: 0px;}
+	.form-group .w-50{width:100% !important;}
+	.form-checkbox .checkbox {margin-top: 6px;}
+	.post-ad {margin-top: 10px;}
+	.account_type{padding: 0vh 0;}
+	.step_act_type{display:none;}
+	.footer_nav{margin-bottom:0;}
+}
+
+@media (max-width:575px){
+	.filter .navbar .navbar-toggler{display:none;}
+	.filter .navbar .collapse{position: relative;}
+	.filter-mobile {display: block;width: 200px;float: left;text-align: left;}
+	.collapse:not(.show) {display: block;}
+	.footer_heading, .footer_btns_sec{display:none;}
+	.banner p {font-size: 14px;}
+	.header {padding: 5px 0px;}
+	.search_input input{height: 30px;line-height: 30px;}
+	.drp_ser{height: 30px;}
+	.drp_ser label{padding-top:0;}
+	.search_input span{width: 45px;height: 45px;    line-height: 40px;}
+	.heading_tab li a{padding: 0 10px;}
+	.social-link {text-align: left;margin-top: 10px;}
+	.five_plan ul li h2{font-size: 18px;    margin-bottom: 0;}
+	.prfile-pic img{width:100%;}
+}
+
+@media (max-width:480px){
+	.search_cat {width: 120px;}
+	.search_input {width: calc(100% - 120px);}
+	.header_right .menu1 .reg{display:none;}
+	.filter label{font-size: 11px;}
+	.filter_btn{width: 100px;}
+}
